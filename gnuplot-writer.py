@@ -26,16 +26,9 @@ for i in range(len(cart_kpts)-1):
 
     distance.append(dist)
 
- 
 
-
- 
 
 coord=distance
-
- 
- 
-
 for i in range(0,len(high_sym)):
       print('set label ' + "'" + str(high_sym[i]) + "'" + ' at ' + str(coord[i]) + ' , -2.06 center font ' + " 'Times bold,25' ")
       print('set arrow from ' + str(coord[i]) + ' ,graph 0 to '+ str(coord[i]) + ' , graph 1 as 1')
