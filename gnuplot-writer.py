@@ -22,6 +22,7 @@ distance = [0]
 
 dist=0
 for i in range(len(cart_kpts)-1):
+    # distance formula in three dimensions. 
     dist += np.sqrt( (cart_kpts[i,0] - cart_kpts[i+1,0])**2 + (cart_kpts[i,1] - cart_kpts[i+1,1])**2  + (cart_kpts[i,2] - cart_kpts[i+1,2])**2 ) 
 
     distance.append(dist)
