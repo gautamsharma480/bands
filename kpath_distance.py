@@ -2,8 +2,10 @@ import numpy as np
 
 alat = 1 # it is taken in fraction units
 
+# you need reciprocal matrix below (copy it from scf.out)
 reciprocal_mat  =  np.array([[1,0,0],[0,1,0],[0,0,1]]) # simple cubic
 
+# You need a text file with kpts in fractional coordinates: only float values are accepted in np.loadtxt
 kpts = np.loadtxt("kpts.dat")
 
 
